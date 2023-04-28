@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&family=Roboto+Mono&display=swap');
+
+:root{ /*variavel que é usada para pode usar as cores e fontes */
+    --cor-primaria: #0f0e0e;
+    --cor-secundaria: #eeeeee;
+    --cor-terciaria: blueviolet;
+    --cor-hover: #541212; 
+
+    --fonte-principal: 'Chivo Mono', monospace;
+    --fonte-secundaria: 'Roboto Mono', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%; /* posionamento do texto */
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px; /*seria a distancia do texto em horizontal */
+}
+
+.cabecalho__menu_link{
+    font-family: var(--fonte-principal);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:var(--cor-terciaria);
+    text-decoration: none; /* tira aquele sublinhado do texto */
+}
+
+body {
+    /* height: 100vh; tamanho da pagina */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria); /* cor que usa de fundo */
+    color: var(--cor-secundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+    padding: 5% 15%; /*tanho da ultilização da pagina */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+strong{
+    color:var(--cor-terciaria); /* Cor da letra */
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo_titulo {
+    font-size: 2rem; 
+    font-family:var(--fonte-secundaria);
+}
+
+.apresentacao__conteudo_texto {
+    font-size: 1.75rem; /*rem é para adpitar a pagina no codigo fonte que a pessoa escolher só no FONT-SIZE */
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__links {
+    display: flex; /* coloca os quadrados lado a lado */
+    flex-direction: column;
+    align-items: center; /* adiciona uma margem para centralizar os quadrados na tela*/
+    justify-content: space-between;
+    gap: 32px; /* adiciona espaços iguais entre cada quadrado */
+    
+}
+.apresentacao__conteudo_redes{
+    font-family:var(--fonte-secundaria);
+    font-weight: 400; /* fonte da letra */
+    text-decoration: none;
+}
+
+.apresentacao__links_link {
+    /* background-color: blueviolet; */
+    display: flex; /* aqui altera os icones */
+    justify-content: center;
+    gap: 16px; /* aqui separa o icone com a letras do botão */
+    border: 2px double var(--cor-terciaria); /* Cor da borda */
+    width: 50%;
+    text-align: center;
+    border-radius: 8px; /* borda do botão do link */
+    font-size: 1.5rem;
+    font-weight: 800; /* tamanho das letras dentro do botão do link */
+    padding: 21.5px, 0;
+    text-decoration: none;
+    font-family:var(--fonte-secundaria);
+    color:var(--cor-terciaria); /* Cor da letra */
+}
+
+.certificado{
+    display: flex; /* aqui altera os icones */
+    justify-content: center;
+    gap: 10px; /* aqui separa o icone com a letras do botão */
+    border: 2px double var(--cor-terciaria); /* Cor da borda */
+    width: 378px;
+    text-align: center;
+    border-radius: 2px; /* borda do botão do link */
+    font-size: 0.75rem;
+    font-weight: 200; /* tamanho das letras dentro do botão do link */
+    padding: 10px, 0;
+    text-decoration: none;
+    font-family:var(--fonte-secundaria);
+    color: var(--cor-terciaria); /* Cor da letra */
+}
+
+.certificado:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__links_link:hover {
+    background-color: var(--cor-hover); /* uma personalização quando o mouse passa por cima do botão */
+}
+
+.apresentacao__imagem {
+    width: 50%; /*largura das coisas */
+}
+
+.rodape { /*fazendo personalização */
+    padding: 24px;
+    color: var(--cor-principal);
+    background-color:var(--cor-terciaria);
+    text-align: center; /*alinhando o texto */
+    font-family:var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1200px) {
+    .cabecalho{
+        padding: 10%;
+    }
+    .cabecalho__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo {
+        width: auto;
+    }
+}
