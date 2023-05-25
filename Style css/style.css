@@ -26,8 +26,8 @@
 
 .cabecalho__menu_link{
     font-family: var(--fonte-principal);
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600;
     color:var(--cor-terciaria);
     text-decoration: none; /* tira aquele sublinhado do texto */
 }
