@@ -3,8 +3,8 @@
 :root{ /*variavel que é usada para pode usar as cores e fontes */
     --cor-primaria: #0f0e0e;
     --cor-secundaria: #eeeeee;
-    --cor-terciaria: blueviolet;
-    --cor-hover: #541212; 
+    --cor-terciaria: blue;
+    --cor-hover: red; 
 
     --fonte-principal: 'Chivo Mono', monospace;
     --fonte-secundaria: 'Roboto Mono', monospace;
@@ -27,7 +27,7 @@
 .cabecalho__menu_link{
     font-family: var(--fonte-principal);
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 400;
     color:var(--cor-terciaria);
     text-decoration: none; /* tira aquele sublinhado do texto */
 }
@@ -142,7 +142,7 @@ strong{
 
 @media(max-width: 1200px) {
     .cabecalho{
-        padding: -5%;
+        padding: -10%;
     }
     .cabecalho__menu{
         justify-content: center;
